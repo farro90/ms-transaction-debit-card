@@ -33,8 +33,8 @@ public class TrasactionDebitCardBusinessApi {
     @GetMapping("/{id}")
     public Mono<TransactionDebitCardBusiness> findById(@PathVariable String id){ return transactionDebitCardBusinessService.findById(id); }
 
-    @GetMapping("/find/{idDebitCardBusiness}")
-    public Flux<TransactionDebitCardBusiness> findByIdPasProPerCli(@PathVariable String idDebitCardBusiness){
+    @GetMapping("/findByIdDebitCardBusiness/{idDebitCardBusiness}")
+    public Flux<TransactionDebitCardBusiness> findByIdDebitCardBusiness(@PathVariable String idDebitCardBusiness){
         return transactionDebitCardBusinessService.findByIdDebitCardBusiness(idDebitCardBusiness);
     }
 
